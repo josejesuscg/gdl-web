@@ -1,76 +1,4 @@
-<!doctype html>
-<html class="no-js" lang="">
-
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-<script src="https://kit.fontawesome.com/36bd1d2efe.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-
-  <header class="site-header">
-    <div class="hero">
-      <div class="contenido-header">
-        <nav class="redes-sociales">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-pinterest"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </nav>
-        <div class="informacion-evento">
-          <div class="clearfix">
-            <p class="fecha"><i class="fas fa-calendar-alt"></i> 10-12 Dic</p>
-            <p class="ciudad"><i class="fas fa-map-marker-alt"></i> Caracas, Venezuela</p>
-          </div>
-
-          <h1 class="nombre-sitio">GdlWebCamp</h1>
-        <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
-        </div> <!--informacion evento cierre-->
-        
-      </div>
-    </div> <!--Hero-->
-  </header>
-
-  <div class="barra">
-    <div class="contenedor clearfix">
-      <div class="logo">
-        <img src="img/logo.svg" alt="logo gdlwebcamp">
-      </div>
-
-      <div class="menu-movil">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="navegacion-principal clearfix">
-          <a href="conferencia.html">Conferencia</a>
-          <a href="#">Calendario</a>
-          <a href="#">Invitados</a>
-          <a href="registro.html">Reservaciones</a>
-      </nav>
-      
-    </div> <!--contenedor-->
-  </div>  <!--barra-->
+<?php include_once 'includes/templates/header.php'; ?>
 
   <section class="seccion contenedor">
     <h2>La mejor conferencia de diseño web en español</h2>
@@ -270,7 +198,7 @@
         <blockquote>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor fuga libero sit architecto eos id obcaecati porro eum incidunt?</p>
           <footer class="info-testimonial clearfix">
-            <img src="/img/testimonial.jpg" alt="Imagen testimonial">
+            <img src="img/testimonial.jpg" alt="Imagen testimonial">
             <cite>
               Oswaldo Aponte Escobedo <span>Diseñador en @PRISMA</span>
             </cite>
@@ -282,7 +210,7 @@
         <blockquote>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor fuga libero sit architecto eos id obcaecati porro eum incidunt?</p>
           <footer class="info-testimonial clearfix">
-            <img src="/img/testimonial.jpg" alt="Imagen testimonial">
+            <img src="img/testimonial.jpg" alt="Imagen testimonial">
             <cite>
               Oswaldo Aponte Escobedo <span>Diseñador en @PRISMA</span>
             </cite>
@@ -294,7 +222,7 @@
         <blockquote>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor fuga libero sit architecto eos id obcaecati porro eum incidunt?</p>
           <footer class="info-testimonial clearfix">
-            <img src="/img/testimonial.jpg" alt="Imagen testimonial">
+            <img src="img/testimonial.jpg" alt="Imagen testimonial">
             <cite>
               Oswaldo Aponte Escobedo <span>Diseñador en @PRISMA</span>
             </cite>
@@ -326,53 +254,6 @@
     </div>
   </section>
 
+  <?php include_once 'includes/templates/footer.php'; ?>
 
-  <footer class="site-footer">
-    <div class="contenedor clearfix">
-      <div class="footer-informacion">
-        <h3>Sobre <span>gdlwebcamp</span></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias magnam quos atque. Amet fugit impedit consectetur aliquid illum iste libero nemo sequi aspernatur id. Eum, consequuntur itaque nemo dignissimos reiciendis quas dicta vitae. Consequatur quos, nostrum beatae repudiandae fuga deserunt.</p>
-      </div>
-      <div class="ultimos-tweets">
-        <h3>Ultimos <span>Tweets</span></h3>
-        <ul>
-          <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates porro molestiae incidunt debitis. Labore, harum?</li>
-          <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates porro molestiae incidunt debitis. Labore, harum?</li>
-          <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates porro molestiae incidunt debitis. Labore, harum?</li>
-        </ul>
-      </div>
-      <div class="menu">
-        <h3>Redes <span>Sociales</span></h3>
-        <nav class="redes-sociales">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-pinterest"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </nav>
-      </div>
-    </div>
-    <p class="copyright">
-      Todos los derechos Reservados GDLWEBCAMP 2016.
-
-    </p>
-  </footer>
-
-  <script src="js/jquery.js"></script>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/jquery.lettering.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/jquery.animateNumber.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> <!--Mapa-->
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
-</html>
+ 

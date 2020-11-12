@@ -39,6 +39,10 @@
         var camisas = document.getElementById('camisa_evento');
         var etiquetas = document.getElementById('etiquetas');
 
+        if(document.getElementById('calcular')) {
+
+        
+
         calcular.addEventListener('click', calcularMontos);
 
 
@@ -140,6 +144,8 @@
             document.getElementById(diasElegidos[i]).style.display = 'block';
         }
 
+        }
+
 
     }); //DOM CONTENT LOADED
 })();
@@ -167,7 +173,30 @@ $(function(){
             $('body').css({'margin-top': '0px'})
         }
         
-    })
+    });
+
+
+    // Menu Responsive
+
+    $('.menu-movil').on('click', function(){
+        $('.navegacion-principal').slideToggle();
+    });
+
+    // Para navegacion cuando aumenta el menu despues de estar responsivo
+    $(window).resize(function() {
+        var windowWidth = $(".barra").width();
+        if (windowWidth > 755) {
+          $(".navegacion-principal").css({ display: "block" });
+        } else {
+          $(".navegacion-principal").css({ display: "none" });
+        }
+      });
+      // Fin de codigo para el menu despues de estar responsivo
+
+
+
+
+
     // Programa de conferencias
     $('.programa-evento .info-curso:first').show();
     $('.menu-programa a:first').addClass('activo')
@@ -197,6 +226,10 @@ $(function(){
         $('#segundos').html(event.strftime('%S'));
     });
 
+
+    //Colorbox
+
+    $('.invitado-info').colorbox({inline:true, width:"50%"});
 
 
 });
