@@ -157,6 +157,13 @@ $(function(){
 
     $('.nombre-sitio').lettering();
 
+
+    //Agregar clase a Menu
+
+    $('body.conferencia .navegacion-principal a:contains("Conferencia")').addClass('activo');
+    $('body.calendario .navegacion-principal a:contains("Calendario")').addClass('activo');
+    $('body.invitados .navegacion-principal a:contains("Invitados")').addClass('activo');
+
     //Menu fijo 
 
     var windowHeight = $(window).height();
