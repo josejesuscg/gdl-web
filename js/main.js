@@ -3,7 +3,9 @@
 
     var regalo = document.getElementById('regalo');
     document.addEventListener('DOMContentLoaded', function(){
-
+        if (document.getElementById('mapa')) {
+            // aquí va el código del mapa
+          
             var map = L.map('mapa').setView([10.505551, -66.917226], 17);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -15,7 +17,7 @@
         .openPopup()
         .bindTooltip('Un Tooltip') /* Para hover en pin de ubicacion */
         .openTooltip()
-
+    }
 
         // Campos Datos Usuario
         var nombre = document.getElementById('nombre');
@@ -38,6 +40,8 @@
         //Extras 
         var camisas = document.getElementById('camisa_evento');
         var etiquetas = document.getElementById('etiquetas');
+
+         botonRegistro.disabled = true;
 
         if(document.getElementById('calcular')) {
 
@@ -99,19 +103,19 @@
                 var listadoProductos = [];
 
                 if(boletosDia >= 1){
-                    listadoProductos.push(boletosDia + 'Pases por dia');
+                    listadoProductos.push(boletosDia + ' Pases por dia ');
                 }
                 if(boletos2dias >= 1) {
-                    listadoProductos.push(boletos2dias + 'Pases por 2 dias');
+                    listadoProductos.push(boletos2dias + ' Pases por 2 dias ');
                 }
                 if(boletoCompleto >= 1) {
-                    listadoProductos.push(boletoCompleto + 'Pase completo');
+                    listadoProductos.push(boletoCompleto + ' Pase completo ');
                 }
                 if(cantCamisas >= 1) {
-                    listadoProductos.push(cantCamisas + 'Camisas');
+                    listadoProductos.push(cantCamisas + ' Camisas ');
                 }
                 if(cantEtiquetas >= 1) {
-                    listadoProductos.push(cantEtiquetas + 'Etiquetas');
+                    listadoProductos.push(cantEtiquetas + ' Etiquetas ');
                 }
 
 
@@ -121,6 +125,9 @@
                     lista_productos.innerHTML += listadoProductos[i] + '<br/>'; /* No entendi */
                 }
                 suma.innerHTML = "$ " + totalPagar.toFixed(2);
+
+                botonRegistro.disabled = false;
+                document.getElementById('total_pedido').value = totalPagar;
             }
         }
 
